@@ -5,7 +5,7 @@ import Input from "components/atoms/input";
 const SearchInput =({placeholder})=> {
     return(
         <div className='flex justify-center shadow-lg  shadow-blue-primary/10'>
-        <Input placeholder={placeholder}/>
+        <Input className="w-96 sm:w-auto" placeholder={placeholder}/>
         <button class="flex items-center  justify-center px-3 border-l bg-blue-primary rounded-r">
             <svg class="w-5 h-5 text-white" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24">

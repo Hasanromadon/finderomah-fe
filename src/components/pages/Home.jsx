@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-import Navbar from 'components/organisms/Navbar';
 import Hero from 'components/organisms/Hero';
 import Headline from 'components/organisms/headline';
 import Service from 'components/organisms/Services';

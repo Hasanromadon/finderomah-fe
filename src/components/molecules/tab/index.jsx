@@ -46,10 +46,10 @@ const Tabs = () => {
     </Tab.List>
     <Tab.Panels className="bg-white rounded-tr-lg rounded-br-lg rounded-bl-lg p-9 tab-pannel">
       <Tab.Panel>
-        <div className='grid grid-cols-4'>
-            <InputList location label="Based Location" data={dataInput}/>
-            <InputList label="Property Type" data={dataInput}/>
-            <InputList label="Avearge Price" data={dataInput}/>
+        <div className='grid grid-cols-1 sm:grid-cols-4'>
+            <InputList zIndex="30" location label="Based Location" data={dataInput}/>
+            <InputList zIndex="20"label="Property Type" data={dataInput}/>
+            <InputList zIndex="10" label="Avearge Price" data={dataInput}/>
             <div  className="mt-2">
               <SearchInput placeholder='Buy Home'/>
             </div>
@@ -57,10 +57,10 @@ const Tabs = () => {
        
       </Tab.Panel>
       <Tab.Panel>
-      <div className='grid grid-cols-4'>
-            <InputList location label="Based Location" data={dataInput}/>
-            <InputList label="Property Type" data={dataInput}/>
-            <InputList label="Rent Price" data={dataInput}/>
+      <div className='grid grid-cols-1 sm:grid-cols-4'>
+            <InputList zIndex="30" location label="Based Location" data={dataInput}/>
+            <InputList zIndex="20"label="Property Type" data={dataInput}/>
+            <InputList zIndex="10" label="Avearge Price" data={dataInput}/>
             <div  className="mt-2">
               <SearchInput placeholder='Rent Home'/>
             </div>

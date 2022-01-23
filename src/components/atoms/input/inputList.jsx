@@ -2,13 +2,13 @@ import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import {ChevronDownIcon, LocationMarkerIcon } from '@heroicons/react/solid'
 
-const InputList =({label, data, location})=> {
+const InputList =({label, data, location, zIndex})=> {
     
       const [selected, setSelected] = useState(data[0])
     
       return (
-        <div className='border-l pl-3'>
-        <span className='text-sm'>{label} <ChevronDownIcon className="w-5 h-5 inline text-blue-primary"/></span>
+        <div className='sm:border-l sm:pl-3 mb-4'>
+        <span className='text-sm from-neutral-500'>{label} <ChevronDownIcon className="w-5 h-5 inline text-blue-primary"/></span>
           <Listbox value={selected} onChange={setSelected}>
             <div className="relative mt-1">
               <Listbox.Button className="relative w-full pr-10 text-left cursor-default focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500 sm:text-sm">
@@ -20,7 +20,7 @@ const InputList =({label, data, location})=> {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
-                <Listbox.Options className="absolute w-full py-1 mt-1 overflow-auto bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+                <Listbox.Options style={{zIndex : zIndex}} className={`absolute w-full py-1 mt-1overflow-auto bg-white rounded-md shadow-lg max-h-60 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm`}>
                   {data.map((person, personIdx) => (
                     <Listbox.Option
                       key={personIdx}
