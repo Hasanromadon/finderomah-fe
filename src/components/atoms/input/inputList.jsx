@@ -1,6 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
-import { CheckIcon, ChevronDownIcon, LocationMarkerIcon } from '@heroicons/react/solid'
+import {ChevronDownIcon, LocationMarkerIcon } from '@heroicons/react/solid'
 
 const InputList =({label, data, location})=> {
     

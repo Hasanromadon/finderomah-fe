@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
       <nav className='container py-4 flex justify-between items-center mb-8'>
         <Logo/>
-          <ul className='flex items-center gap-8 text-gray-500'>
+          <ul className='text-base flex items-center gap-8 text-gray-500'>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/'>How to get</Link></li>
             <li><Link to='/'>Product</Link></li>

@@ -31,11 +31,13 @@ const Service =()=> {
 
     return(
         <section className='mt-20'>
-            <h2 className='text-[40px] text-center font-semibold mx-auto'>Have a great experience with <span className='block'>our service</span></h2>
-            <div className='container' >
+            <h2 className='text-[40px] text-center font-semibold mx-auto'>
+                Have a great experience with <span className='block'>our service</span>
+            </h2>
+            <div className='container border-b'>
                 <div className='grid grid-cols-4 my-8 gap-20'>
-                    {dataService.map((service)=> (
-                        <Card image={service.image} title={service.title} description={service.description}/>
+                    {dataService.map((service, i)=> (
+                        <Card key={i} image={service.image} title={service.title} description={service.description}/>
                     ))}
                 </div>
             </div>

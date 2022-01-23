@@ -1,0 +1,26 @@
+.testimony {
+    background-image: url('/public//images/testimony-bg.png');
+    background-repeat: no-repeat;
+    object-fit: fill;
+}
+
+
+.testimony-card-wrapper::before {
+    content: url('/public//images/CardIcon/ornamen-testimony.svg');
+    position: absolute;
+    z-index: 2;
+    left: 140px;
+    bottom: 20px;
+}
+.testimony-card-wrapper::after {
+    content: url('/public//images/CardIcon/ornamen-testimony.svg');
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    right: 140px;
+
+}
+
+.slick-dots li.slick-active button:before {
+    @apply text-blue-primary opacity-100;
+}

@@ -1,0 +1,7 @@
+.footer-link li:not(:last-child) {
+    @apply mb-2;
+}
+
+.social-contact img {
+    @apply ml-4;
+}

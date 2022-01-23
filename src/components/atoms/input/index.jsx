@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Input = ({placeholder}) => {
+const Input = ({placeholder, block , borderNone , className}) => {
   return(
-          <input style={{ border: '1px solid #D4E5F6' }} className=" outline-none rounded-l text-base py-4 px-2 w-52 " type="text" placeholder={placeholder}/>
+          <input className={` ${className && className} ${borderNone ? 'border-none' : 'border'}  outline-none rounded-l text-base p-2 ${block ? 'block' : ''}`} type="text" placeholder={placeholder}/>
   );
 };
 
