@@ -35,7 +35,7 @@ const Service =()=> {
                 Have a great experience with <span className='block'>our service</span>
             </h2>
             <div className='container border-b'>
-                <div className='grid grid-cols-4 my-8 gap-20'>
+                <div className='grid lg:grid-cols-4 md:grid-cols-3  sm:grid-cols-1 my-8 lg:gap-20 md:gap-6 gap-0'>
                     {dataService.map((service, i)=> (
                         <Card key={i} image={service.image} title={service.title} description={service.description}/>
                     ))}

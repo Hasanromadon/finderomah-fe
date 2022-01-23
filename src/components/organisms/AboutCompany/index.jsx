@@ -7,7 +7,7 @@ console.log(process.env.PUBLIC_URL);
     return(
         <section className='container mt-20'>
             <img className='mb-8' src='./images/company.png' alt=''/>
-            <div className='grid grid-cols-2 gap-8'>
+            <div className='grid sm:grid-cols-2 gap-8'>
                 <p> <span className='text-blue-primary'>FinderOmah</span> is sit amet, consectetur adipiscing elit. Laoreet vitae maecenas tortor, 
                     sollicitudin tellus consectetur magnis tincidunt. At dapibus elementum sit vel mattis consectetur cursus. 
                     At parturient arcu feugiat fermentum rhoncus nulla suspendisse est. Accumsan ipsum pellentesque rhoncus 
@@ -15,7 +15,7 @@ console.log(process.env.PUBLIC_URL);
                     Risus mauris, egestas consequat posuere. Dignissim eu neque diam laoreet nisl.
                 </p>
                 <div>
-                    <div className=' w-[30rem] rounded-xl shadow-primary-lg bg-blue-primary px-6 py-8 -mt-32'>
+                    <div className='sm:max-w-[30rem] rounded-xl shadow-primary-lg bg-blue-primary px-6 py-8 sm:-mt-32'>
                         <p className='text-white font-normal text-4xl mb-6'>
                         Our company is in Sumarecon Mall, Bekasi, West Java, Indonesia
                         </p>

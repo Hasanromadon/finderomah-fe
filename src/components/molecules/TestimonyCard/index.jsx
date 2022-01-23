@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TestimonyCard =({product})=> {
+const TestimonyCard =({hidden})=> {
     return(
-        <div className='p-8 w-96 rounded-[24px] shadow-primary-lg bg-white flex flex-col items-center'>
+        <div className={`${hidden ? 'hidden sm:block' : ''} p-8 w-96 rounded-[24px] shadow-primary-lg bg-white flex flex-col items-center`}>
                 <img  className=' mb-4' src='./images/cardIcon/quote.svg' alt=''/>
                 <p className='mb-4'>
                     “Lorem ipsum dolor sit amet, consectetur adipiscing elit. 

@@ -1,10 +1,9 @@
 .button {
-    @apply px-4 py-2 text-base text-center font-semibold;
+    @apply px-4 py-2 text-base text-center font-semibold hover:opacity-80;
 }
 
 .button__primary {
     @apply text-white;
     background: linear-gradient(136.57deg, #008FF7 12.72%, #35B6FF 86.93%);
     box-shadow: 0px 2px 8px 0px rgba(208, 223, 232, 1);
-
 }
