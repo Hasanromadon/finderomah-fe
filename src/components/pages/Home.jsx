@@ -10,11 +10,12 @@ import Testimony from 'components/organisms/Testimony';
 import Contact from 'components/organisms/Contact';
 import Footer from 'components/organisms/Footer';
 import Example from 'components/organisms/Navbar/TailwindNav';
+import Navbar from 'components/organisms/Navbar/TailwindNav';
 
 const Home = () => {
   return (
     <>
-       <Example/>
+       <Navbar/>
         <main> 
           <Hero/>
           <Headline/>

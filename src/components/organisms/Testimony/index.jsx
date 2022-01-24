@@ -15,7 +15,7 @@ const Testimony =()=> {
         slidesToShow: 1,
         arrows: false,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 1000
       };
 
